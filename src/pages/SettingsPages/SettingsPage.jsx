@@ -36,7 +36,7 @@ function SettingsPage() {
                 fontSize: 40,
                 fontWeight: 600,
                 margin: 0,
-                color: "black",
+                color: "",
               }}
             >
               Color Theming
@@ -176,81 +176,39 @@ function SettingsPage() {
         <div
           style={{
             display: "flex",
+
             marginTop: 10,
             marginBottom: 50,
-
-            flexDirection: "column",
+            flexWrap: "wrap",
+            gap: 50,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="NAME"
-                style={{
-                  borderTop: "1px sold grey",
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="EMAIL"
-                style={{
-                  borderTop: "1px sold grey",
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="NAME"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="EMAIL"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="PHONE NUMBER "
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="PASSWORD"
+              onChange={(e) => console.log(e.target.value)}
+            />
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
 
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PHONE NUMBER "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PASSWORD"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
         <div style={{ display: "flex", marginBottom: 50 }}>
           <div>
             <button
@@ -302,266 +260,94 @@ function SettingsPage() {
         <div
           style={{
             display: "flex",
+
             marginTop: 10,
             marginBottom: 50,
-
-            flexDirection: "column",
+            flexWrap: "wrap",
+            gap: 50,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="NAME"
-                style={{
-                  borderTop: "1px sold grey",
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <CustomInput
-                title="EMAIL"
-                onChange={(e) => console.log(e.target.value)}
-              />
-            </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="COMPANY NAME"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="CIN"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="COMPANY ADDRESS"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="PAN"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="COMPANY EMAIL"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="GSTIN"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="COMPANY PHONE"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="BANK NAME"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="INDUSTRY "
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="BANK A/C NO."
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="STATE"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="IFSC CODE"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}></div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="BRANCH"
+              onChange={(e) => console.log(e.target.value)}
+            />
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
 
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PHONE NUMBER "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PASSWORD"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
-
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PHONE NUMBER "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PASSWORD"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
-
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PHONE NUMBER "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="PASSWORD"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
-
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder=" "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="STATE"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
-
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="BANK A/C NO. "
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="STATE"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: 10,
-            marginBottom: 50,
-
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "",
-              gap: 50,
-            }}
-          >
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="IFSC CODE"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-            <div style={{ width: "400px" }}>
-              <input
-                placeholder="BRANCH"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  fontSize: "24px",
-                }}
-              />
-            </div>
-          </div>
-        </div>
         <div style={{ display: "flex", marginBottom: 50 }}>
           <div>
             <button

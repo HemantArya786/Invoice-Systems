@@ -1,0 +1,18 @@
+.DetailSector {
+  background-color: white;
+  border: none;
+
+  box-shadow: 4px 6px 5px 0px rgba(140, 133, 140, 0.33);
+}
+.ItemSector {
+  background-color: white;
+  border: none;
+
+  box-shadow: 4px 6px 5px 0px rgba(140, 133, 140, 0.33);
+}
+.PreviewSection {
+  background-color: white;
+  border: none;
+
+  box-shadow: 4px 6px 5px 0px rgba(140, 133, 140, 0.33);
+}

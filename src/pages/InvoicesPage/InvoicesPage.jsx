@@ -102,7 +102,7 @@ const InvoicesPage = () => {
                 style={{
                   marginTop: 1,
                   display: "flex",
-                  justifyContent: "center",
+
                   justifyContent: " space-around",
 
                   border: "1px solid grey",

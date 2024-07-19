@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Menu from "../../Container/MenuSection/Menu";
+import CustomInput from "../../components/CustomInput";
+import "../../pages/CreateInvoicePage/CreateInvoicePage.css";
 
 export default function CreateInvoice() {
   const [itemData, setItemData] = useState([
@@ -60,7 +61,7 @@ export default function CreateInvoice() {
         </div>
       </section>
 
-      <section className="DetailSector" style={{ marginTop: 10 }}>
+      <section className="DetailSector" style={{}}>
         <div
           style={{
             display: "flex",
@@ -71,15 +72,37 @@ export default function CreateInvoice() {
         >
           <p style={{ fontSize: 20, padding: 5, margin: 0 }}>DETIALS</p>
         </div>
-        <div style={{ margin: 50, display: "flex", flexWrap: "wrap" }}>
-          <div>
-            <input
-              placeholder="CUSTOMER NAME"
-              style={{
-                borderBottom: "none",
-                borderLeft: "none",
-                borderRight: "none",
-              }}
+        <div
+          style={{
+            padding: 60,
+
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 50,
+          }}
+        >
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="CUSTOMER NAME"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="CUSTOMER BILLING ADDRESS"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="CUSTOMER GSTIN"
+              onChange={(e) => console.log(e.target.value)}
+            />
+          </div>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="PLACE OF SUPPLY"
+              onChange={(e) => console.log(e.target.value)}
             />
           </div>
         </div>
@@ -95,51 +118,54 @@ export default function CreateInvoice() {
         >
           <p style={{ fontSize: 20, padding: 5, margin: 0 }}>ITEMS</p>
         </div>
-        <div style={{ display: "flex", gap: 20 }}>
-          <div>
-            {itemData.map((item) => {
-              <p style={{ borderBottom: "2px solid black" }}>
-                {item.ItemDescription}
-              </p>;
-            })}
-            <p>ITEM DESCRIPTION</p>
+        <div style={{ display: "flex", gap: 50, margin: 50 }}>
+          <div style={{ width: "400px" }}>
+            <CustomInput
+              title="ItemDescription"
+              onChange={(e) => console.log(e.target.value)}
+            />
           </div>
-          <div>
-            {itemData.map((item) => {
-              <p style={{ borderBottom: "2px solid black" }}>
-                {item.ItemDescription}
-              </p>;
-            })}
-            <p>SAC CODE</p>
+          <div style={{ width: "200px" }}>
+            <CustomInput
+              title="ItemDescription"
+              onChange={(e) => console.log(e.target.value)}
+            />
           </div>
-          <div>
-            {itemData.map((item) => {
-              <p style={{ borderBottom: "2px solid black" }}>
-                {item.ItemDescription}
-              </p>;
-            })}
-            <p>TAXABLE VALUE</p>
+          <div style={{ width: "200px" }}>
+            <CustomInput
+              title="ItemDescription"
+              onChange={(e) => console.log(e.target.value)}
+            />
           </div>
-          <div>
-            <p>₹900</p>
-            <p>CGST (%)</p>
+
+          <div style={{ width: "150px", padding: 0 }}>
+            <p style={{ padding: 0, margin: 0 }}>₹900</p>
+            <p style={{ color: "grey" }}>CGST (%)</p>
           </div>
-          <div>
-            <p>₹900</p>
-            <p>CGST (%)</p>
+          <div style={{ width: "150px" }}>
+            <p style={{ padding: 0, margin: 0 }}>₹900</p>
+            <p style={{ color: "grey" }}>CGST (%)</p>
           </div>
-          <div>
-            <p>₹11800</p>
-            <p>TOTAL VALUE</p>
+          <div style={{ width: "200px" }}>
+            <p style={{ padding: 0, margin: 0 }}>₹11800</p>
+            <p style={{ color: "grey" }}>TOTAL VALUE</p>
           </div>
         </div>
-        <div className="" style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className=""
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "",
+          }}
+        >
           <button
             style={{
               width: "200px",
               height: "40px",
               fontSize: 15,
               padding: 10,
+              marginBottom: 50,
               fontWeight: 700,
               border: "1px solid black",
               backgroundColor: "black",
@@ -150,7 +176,7 @@ export default function CreateInvoice() {
           </button>
         </div>
       </section>
-      <section className="PreviewSection" style={{ marginTop: 40 }}>
+      <section className="PreviewSection" style={{ marginTop: "" }}>
         <div
           style={{
             display: "flex",
@@ -175,7 +201,7 @@ export default function CreateInvoice() {
             <p>TOTAL TAX</p> <p>₹7200</p>
           </div>
           <div style={{ display: "flex", gap: 10 }}>
-            <p>INVOICE TOTAL</p> <p>₹47000</p>
+            <p>INVOICE TOTAL</p> <p style={{}}>₹47000</p>
           </div>
         </div>
         <div className="" style={{ display: "flex", justifyContent: "center" }}>
@@ -185,6 +211,7 @@ export default function CreateInvoice() {
               height: "40px",
               fontSize: 15,
               padding: 10,
+              marginBottom: 50,
               fontWeight: 700,
               border: "1px solid black",
               backgroundColor: "black",
