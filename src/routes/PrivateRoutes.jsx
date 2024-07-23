@@ -4,6 +4,7 @@ import CreateInvoice from "../pages/CreateInvoicePage/CreateInvoicePage";
 import Recepients from "../pages/RecepientsPage/RecepientsPage";
 import SettingsPage from "../pages/SettingsPages/SettingsPage";
 import Layout from "../layouts/Layout";
+import TaxInvoice from "../pages/TaxInvoice/TaxInvoice";
 
 const PrivateRoutes = () => {
   return (
@@ -18,6 +19,14 @@ const PrivateRoutes = () => {
           }
         />
         <Route
+          path="/taxinvoice"
+          element={
+            <Layout>
+              <TaxInvoice />
+            </Layout>
+          }
+        />
+        <Route
           path="/createInvoices"
           element={
             <Layout>
@@ -25,7 +34,14 @@ const PrivateRoutes = () => {
             </Layout>
           }
         />
-        <Route path="/recepients" element={<Recepients />} />
+        <Route
+          path="/recepients"
+          element={
+            <Layout>
+              <Recepients />
+            </Layout>
+          }
+        />
         <Route
           path="/settings"
           element={

@@ -16,7 +16,6 @@ export default function Recepients() {
   ]);
   return (
     <div style={{ display: "flex" }}>
-      <Menu />
       <main
         style={{
           margin: 50,
